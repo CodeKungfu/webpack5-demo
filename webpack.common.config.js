@@ -34,7 +34,8 @@ module.exports = {
             limit: 1024 * 1024,
             esModule: false
           }
-        }]
+        }],
+        type:'javascript/auto'
       },
       {
         test: /\.html$/,
