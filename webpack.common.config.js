@@ -24,12 +24,13 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        // 针对css文件使用的loader，有先后顺序，数组项越靠后越先执行(从下到上，从右到左)
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(jpe?g|png|gif|svg)$/,
         use: [{
-          loader: 'url-loader',
+          loader: 'url-loader', // url-loader主要可以对小于某个大小的图片进行base64格式的转化处理
           options: {
             limit: 1024 * 1024,
             esModule: false
