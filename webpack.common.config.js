@@ -45,7 +45,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(), //  使用清除旧文件的插件  
     new HtmlInlineScriptPlugin(), // inline script
     new ProgressPlugin(), // 展示进度
     new MiniCssExtractPlugin({

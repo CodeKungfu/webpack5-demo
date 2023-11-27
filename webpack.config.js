@@ -22,7 +22,7 @@ const getEntries = () => {
             keepClosingSlash: false, // 在单例元素上保留尾部斜杠
             removeStyleLinkTypeAttributes: false,
             useShortDoctype: false,
-            minifyCSS: false,
+            minifyCSS: true, // 压缩css
             collapseWhitespace: false, // 移除空格
             removeComments: false, // 移除注释
           },
